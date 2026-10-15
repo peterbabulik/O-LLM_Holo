@@ -245,7 +245,7 @@ $$\begin{array}{lcccc}
   title     = {O-LLM: Octonionic Language Model & Q-Trinity 8D Core Architecture},
   year      = {2026},
   publisher = {GitHub},
-  url       = {https://github.com/peterbabulik/O-LLM_HOLO}
+  url       = {https://github.com/peterbabulik/O-LLM_Holo}
 }
 ```
 
