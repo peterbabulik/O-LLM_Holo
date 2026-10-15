@@ -24,31 +24,6 @@ Unlike standard Transformers that suffer from quadratic complexity $\mathcal{O}(
 
 ---
 
-## Repository Structure
-
-```text
-O-LLM/
-├── README.md                           # Part 1: Architecture, Code, API & Benchmarks (This File)
-├── README_MATH.md                      # Part 2: Hurwitz Theorems, Fano Geometry & Proofs
-├── requirements.txt                    # Minimal dependencies (numpy, scipy)
-├── core/
-│   ├── __init__.py
-│   ├── fano_tensor.py                  # Rank-3 C_ijk tensor and octonionic multiplication
-│   ├── o_cell.py                       # Octonionic Recurrent Cell with Channel 2a gating
-│   └── holographic_codec.py            # 50% Fano projective compression & reconstruction
-├── hardware/
-│   ├── moire_fluxonic_engine.py        # AC Josephson & SQUID phase-locking simulator
-│   └── quantum_navigation.py           # Berry phase topological trap-evasion solver
-├── notebooks/
-│   ├── 01_Train_and_Export_OLLM.ipynb  # Colab Step 1: Training & 50% Holographic Export
-│   └── 02_Load_and_Inference.ipynb     # Colab Step 2: Client Reconstruction & Generation
-└── tests/
-    ├── test_hurwitz_norm.py            # 8D norm preservation vs. 16D sedenion collapse
-    └── test_fano_recovery.py           # Bit-exact parity verification
-```
-
----
-
 ## Key Benchmarks & Empirical Results
 
 The core claims of O-LLM have been empirically validated in benchmark suites:
@@ -69,7 +44,7 @@ The core claims of O-LLM have been empirically validated in benchmark suites:
 O-LLM requires only standard scientific computing libraries (`numpy` and `scipy`). No heavy deep learning dependencies are mandatory.
 
 ```bash
-git clone https://github.com/peterbabulik/O-LLM.git
+git clone https://github.com/peterbabulik/O-LLM_Holo.git
 cd O-LLM
 pip install -r requirements.txt
 ```
